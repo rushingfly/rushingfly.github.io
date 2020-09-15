@@ -10,5 +10,5 @@ If you would like to get contact with me, you can send me a Email to wangch2204å
 
 
 {:refdef: style="text-align: center;"}
-![me](/assets/image/map.png)
+![me](/assets/image/me.png)
 {: refdef}
