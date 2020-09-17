@@ -96,7 +96,7 @@ author:
   name             : "Charles Wang"
   avatar           : "/assets/image/avator.jpg"
   bio              : "Welcome to my blog! My name is Charles Wang (王翀), I'm a software engineer lives in Beijing."
-  location         : "Beijing"
+  location         : #
   email            : #
   links:
     - label: "Email"
