@@ -278,3 +278,6 @@ defaults:
       read_time: true
       comments: true
       related: true
+
+# 自己加的配置
+post_pagination: false
