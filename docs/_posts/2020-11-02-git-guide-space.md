@@ -1,7 +1,7 @@
 ---
 title:  "git 经验谈（一）：认识 git 的结构"
 share: false
-last_modified_at: 2020-11-02
+last_modified_at: 2020-12-02
 tags:
   - git
   - 项目管理
@@ -84,6 +84,6 @@ git checkout dc3966be219e95abe2b098858e1ef4dd79f4b84d
 * 代码的提交/合并
 * 团队使用规范
 
-最后再推荐一篇攻略，我的东西都是跟人家学的：[A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
+最后再推荐一篇攻略，我觉得这篇借助图形讲得非常好：[A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 
 感谢您的阅读，欢迎提出您的看法。
