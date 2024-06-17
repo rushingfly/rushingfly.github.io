@@ -1,0 +1,62 @@
+---
+id: add-entitlement-credit
+title: "add entitlement credit"
+description: "Add the credit amount to the given Entitlement. The credit amount is accumulated & saved in the current Entitlement Term of the gvien Entitlement."
+sidebar_label: "add entitlement credit"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVk1vGzcQ/SvEHIq0YCW3aC+LIKj8gULwwYbtnBwdqOVoxWSX3AxJKaqw/z0YrlZaaWUjCXoo6oOxIofz9R4fZwsafU6mDsZZyGCitQhLFDmhNkGoykUbRHBpsTArtOLGBhNKrNCGkXga2BovVJ7HKpYqoBY/Ca9WqIWxrd9IhDb0nYgnpEq4RRtiZU5CgARXIylOcKrbFHv7Vyk4SKgVqQoDkofseXtS1h0Vypp/khMxvQYJhpdrFZYgwaoKIQNHxVSDBMLP0RBqyAJFlODzJVYKsi2ETc2GPpCxBTSNPI3TL+ulMHiw+c5ws9YYfbh0esMWubMBbeBPVdelyVOF44+es9n2XNXETQwGfTqWmjZJgE1tTikZ3jiuhsE9MGCOQmmNumPDEewM0y5dG6s5EjTyqNLrMwUdWTALWqvTJIxnUrm0oMqRmC6ESTzDqg4b2U9mbcpykKjGhYplEL1gIvQ4h8dsGyTpeuQ5W0fTB/H5he6etmPgd7YP7eYfMQ/QsOPjZjz04D9lTsrC1876FuTfLy6G3by7Bfn/ZM3AyuL6qpfx+UQtrk/0Sy0CUkrVdDWeTfNbWDHAs5HwxzlYLpUWO2zFDZGj70HpNC5H+fNclKkNSFaV4hFphfRvRGokeMwjmbBJsnuJipCe3Ce0kxiWkD3PWLaCKliW+/rIfK8wLB1reu18q+F8BMaOivE2yXEz7oE93h5pZzNWWu/136eaWvGPVLKb8TKE2mfjsarNyMcCaZSXLmrglLq0H7m6luCD5AcwJQMR2EIsHAkVw9JR97CYtFipwMrydmf8C/+9G4lpkqwFuSqRa3I/FX9jmNTmqjRowyTP0fsUe9S9G0tUGunwckz60Q6cVLW5xU0iHEPW04ibL6qqS3zl8l4M7luH7tlrdtg8pX/v4hm7cN3jpPJEK6yUYUh8rGtH4a8WDOMOtT3yinhs90HuIOwAXK/Xo+7MeOcEBup49fD+WuyHBS+cFUp4THAQehcpRy/5XpdRG1uIfhFeipqcjnnwUrjFAsnL/tPgpYheFSgIc0daFORi7RML0tgRjC2kwJAnteBT+6om91OQwOxs8/xtdMHJM+krla7YrglK66NXKu/IfVRn79n/b85rO14G/BLGdamM5WoToNvdFX9m/oCErJu5elXz8umMdLjoMwlLFovsGbbbufL4nsqm4eXPEYlFaCZhpcioOSPAk6Dx/K0hW6jS4yvNfPOwe1B/FsOB8WxR3Q20/ByvVBn5F0j4hJv9QJmmxB/JYTBM/kAKx41sZo3sVIVb09pctcF/fWJPBx+Dp4ALaU+wWNXhVdu+ut/fPT6BhPluaK2c5jOk1jzDqDVk8AE+QBr0001ko7S+hVLZIqqC7Vu/rHJqJ84H/eO0ZPfBlZ3tyql+tsXwfy7t7JG3rNO3uHm3N293Xjyw1+zWmjGaNU3zFQUKrLI=
+sidebar_class_name: "post api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>add entitlement credit</h1>
+
+<MethodEndpoint method={"post"} path={"/org/{orgId}/entitlement/{entitlementId}/addCredit"}></MethodEndpoint>
+
+
+
+Add the credit amount to the given Entitlement. The credit amount is accumulated & saved in the current Entitlement Term of the gvien Entitlement.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Entitlement ID","in":"path","name":"entitlementId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3><strong className={"openapi-schema__required"}>required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}><div style={{"marginTop":"1rem","marginBottom":"1rem"}}>
+
+RequestBody
+
+</div></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"creditAmountIncrement"} required={true} schemaName={"number"} qualifierMessage={undefined} schema={{"description":"The amount to be added to the credit amount.","type":"number"}}></SchemaItem><SchemaItem collapsible={false} name={"entitlementID"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"entitlementTermID"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"This is optional. If it is empty, the credit will be added to the default entitlement term of the entitlement.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"organizationID"} required={true} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"creditAmountIncrement"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"description":"The amount to be added to the credit amount.","type":"number"}}></SchemaItem><SchemaItem collapsible={false} name={"entitlementID"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"entitlementTermID"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"newCreditAmount"} required={false} schemaName={"number"} qualifierMessage={undefined} schema={{"description":"The new credit amount after the increment.","type":"number"}}></SchemaItem><SchemaItem collapsible={false} name={"organizationID"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"creditAmountIncrement\": 0,\n  \"entitlementID\": \"string\",\n  \"entitlementTermID\": \"string\",\n  \"newCreditAmount\": 0,\n  \"organizationID\": \"string\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad Request Error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal Server Error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

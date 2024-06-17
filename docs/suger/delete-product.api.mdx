@@ -1,0 +1,70 @@
+---
+id: delete-product
+title: "delete product"
+description: "The product is soft deleted (marked as DELETED status) in Suger service. only the products with non PUBLIC status are allowed to be deleted."
+sidebar_label: "delete product"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVcGO2zYQ/ZXBnJKCsLZFehGCoN71ojAStIvs7mnhA1ca2exKpEIO47qC/j0YSrI3thOgSQ7xwZbFGb6ZxzePHZYUCm9aNs5ijncbgta7MhYMJkBwFUNJNTGV8KLR/olK0AEW1++u764XEFhzDC/BWLiNa/IQyH80Bc3A2XoHfNgtwNbwBqyzcHN/+W55NeaC9gS6rt2WSmAHjzThzVCha8lrKW1ZYo6LtHAzbIgKW+11Q0w+YP7QHXXyt19ra/5L2bBcoEIjr1vNG1RodUOYo/PrZYkKPX2IxlOJOftICkOxoUZj3iHvWgkM7I1dY9+rY5yxnC9CjP3/T5iVBIfW2UBB1n+7uJCfz6Gvm5Z3MOSAqQbipF05uVgUFEIVa1RYOMtkWXbQbVubIrGS/RNkm+4rZfS9wlfnoC91CdINBQby3vnvR3l1ivKXY6hctOWPwfj9XCdLy+StrpN0yf8IpF5hoCJ6w7skzEvSnvydeyI7j7zB/GElB8x6LcKdFIQrhQ3xxonUhxlIGpcEzJxfZ12Sa5+Nksq6vbZ6FEipfxiF6GtJyjbMbcizTLdmFmRAZ0XtYokCP5V4K50MKjsp9OTYUwCwREDlPOjIG+enMTPpZaMZXAWvx+Bf5PNmBsvkKJV3TfKF+c0S/iSet+aqNmR5nvSasGfTJG1Il+QPszR/joZqol635i3tZDjR2MpJ2XJ6ukinR402wkaIbes8/zHwYNxh28G6bod1VCN7E3fb7XY25WTjJtirI2au3t8vYG9XAZwFDYESE56Ci76goMDYoo6lzKt75k9B7W1Sgasq8kEBWTZcU0NW3sag1wSeCudLWHsX25AOIPkfG7tWQFwIcylr39X8ZokKRRhDnb/OLqT41gVudFLySMKguKkOPOqvO8zDz3ZHjCJg+pezttbGSn/pCLtxeh7E51FhPtn9ocn8YM8rhRsXWMK77lEHuvd138vrD5G8TPJK4UftjX4UfuXCMUGeS8wrXQf6CmUv3o/O/xJO76WzDUzStjs5Pl1H+YcKn2i3v7fSZfQtNXx2Z30D/IG0ftWraUyFkmFdZrnlZ5knDto/N7tBKahQj6ZzmGvZT00PAnC2sGNfGKqQb6HobMpr8Z+3tHuzDx9Wvpiw96IhWmha9X3/CQrVLnE=
+sidebar_class_name: "delete api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>delete product</h1>
+
+<MethodEndpoint method={"delete"} path={"/org/{orgId}/product/{productId}"}></MethodEndpoint>
+
+
+
+The product is soft deleted (marked as DELETED status) in Suger service. only the products with non PUBLIC status are allowed to be deleted.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Product ID","in":"path","name":"productId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+Empty string if deletion is successful
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Not found error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,62 @@
+---
+id: void-invoice
+title: "void invoice"
+description: "Void the invoice. It can be used for manual void or cancel the invoice."
+sidebar_label: "void invoice"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v3DYQ/SvEnJqCWDlFexGCoGunaBc51IiTXow90NRoxUYimSFpdyvovxdDSfvtAHWyB++anI83b2Yee6gwaDI+GmehhL+cqURsUBj76IzGhVhFoZUVDyhSwErUjkSnbFKteGRbR3ytsT3yAgnOIymOuqqmuKvxEiR4RarDiBSgvO9PIPxJG2XNv9lXrN6BBMPHXsUGJFjVIZTgaLOqQALhl2QIKygjJZQQdIOdgrKHuPVsGCIZu4FhkKd5frPRxBY7tPHZNLi3+dZ0U/XPppqo+59p1mwcvLMBA9//dHXFXyeVdj5uxegjTD02zgQRktYYQp1akKCdjWgjeyvvW6NzA4q/A4fovwJhGCT8fCnttaoEV4IhCiRy9K1ZfrmUZWUjklWtCEiPSN8j0yAhoE5k4jbP5zUqQvroPqNdpthAeb9m4qPa8PzCtWlbdl1L6DA2rhp7q5s86WwPhaNN0eehHYqDoSr6owkbimkKin43DkPB7QKGxPWNG5Oo5ahFE6MPZVEobxYhbZAWunWpAoY3l3DHlY7TcVbIWcuygYhskVddpdg4mrfR5MNOReFq8WYy/pE/b7NQmCBqcl2WguXtSvyOcenNTWvQxmWetZx7MW9Ag6pC2u/A8jAbyLk1ypv3uOWlAmNrx7C5u0rn7mKnDLMRkveO4q8jD8btw97xibgb70FO7M3cPT09LWafYgoCgzxh5ubDp3dip2lBOCuUCJiZIAwukcYghbG6TRXvmTuQsSCFJ1clHYMUrq6RghQHnQ9SpKA2KAi1o0psyCUfRq1lmYzGbqTAqJm57LWranm7Agk8GCPO14srBu9diJ3Kkz6RMC79ToKPquv32/IdX4CpexH/iYVvlbEMLHPfT3txzzoOEspZzg844eNT+d3DLw/lMi/IWkLjQuSgff+gAn6idhj4+EtC4kVeS3hUZNQD08fPjgn8u4KyVm3Ar3Dyw4dJkF+J89fpYpnz5Not41Nt4v9Awmfc7l6v/Ea8BMPZy/UCCMfUvhjK0av2Ahj7Ng7rQc6CwN0Z71k1fDzwPNPy4VB2b5cfb/4ACWpSt72AcDg5/+D4F3GdCtAIgv8yQxdd3rDQvcft2535ePOsw070Zga49GH4D7DaRes=
+sidebar_class_name: "patch api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>void invoice</h1>
+
+<MethodEndpoint method={"patch"} path={"/org/{orgId}/entitlement/{entitlementId}/invoice/{invoiceId}/void"}></MethodEndpoint>
+
+
+
+Void the invoice. It can be used for manual void or cancel the invoice.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Entitlement ID","in":"path","name":"entitlementId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Invoice ID","in":"path","name":"invoiceId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+Empty string if void is successful
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

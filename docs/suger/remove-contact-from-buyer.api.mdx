@@ -1,0 +1,62 @@
+---
+id: remove-contact-from-buyer
+title: "remove contact from buyer"
+description: "remove contact from buyer by the given organization, buyer id and contact id."
+sidebar_label: "remove contact from buyer"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVVFv2zYQ/ivEPW0FYWXF9iIURZ0mG4wOWJG0T4EfGOkscZVI9nhKpgn678VRkuM6ToGm9YMtU3f8Pn5393GAEmNBNrD1DnIgbP0dqsI7NgWrHflW3XY9krrtFdeoKnuHTnmqjLP/G8nSc4AtlXHlPtWWK9DgA1KK2pSQw1Xa/e0U8Sf59lwyQUMwZFpkpAj5zXDE6Z8DMLW5AA1WloPhGjQ40yLk4KnalKCB8HNnCUvImTrUEIsaWwP5ANwHCYxM1lUwjvoYJ5F5EiAd8kch5qM/CTKL950wWwmOwbuIUd6/PDuTn6+hsQ3cqylH2Z2KXVFgjKATKDqWFBNCY4ukdPZvlLzhG7jjqOH3U1jnplRCHyMrJPL0oyh/nELZOEZyplER6Q7pZyCNGiIWHVnuUyOeoyGkD/4TunXHNeQ3W1GbTSWNupQTthpa5NpLj5fYIGPqaUmAzFOVDak9x2yubzbsCz1mqbGyYe6vEYSCnGcahY4a2SSrmUPMs8wEu4pdhbQqGt+VIHQWytdysqkFHhF/VKIUoFgi1M6TMh3XnpYxs2mxNaz8Tr2ag1/I5/VKbVjZOHmDWML6/Ub9hbwO9m1j0fE6NVbCXi1tXqMp06TPjb4+RAO9lMIE+w57mRywbueF9qyUPGJrrKgRuxA88ZtJB+sftr2WFXU9vQc9q7dod39/v1pysnkTGPXxjF59vFB734rKO2VUxKQEYfQdFRi1sq5oulKG6dAMo1aBfNkVHLXyux1S1AodW26wRSerXTQVKsLCU6kq8l2IqQDJ/9i6SivkQpRLWftTrd9vQIM0xsTzt9WZkA8+cmtSZ88iPOnhcHTU4WFUfrrxzwVl/I+z0BjrhGsqxzBPxo14NmjIF+teKq0hP/TBhXq+OPBWQ+0jyw7DcGsifqRmHGX5c4ckg7vVcGfImluRT+4TG+W5hHxnmojfkOGXq9l1f1WPr52TZ1o61/VSHdN08g80fMJ+fy2li+A5HA6upGeAL4I9G/6r6+oZBB7KOG5HvZiAVGR6L04R+CDzkV+Ph9Z6cfn35YdL0GBmS3twDdlPLw8CcJLYsetMLORbJDqZ8krc7R32r/fh05snE/ZON0WLTNtxHL8AOys6jA==
+sidebar_class_name: "delete api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>remove contact from buyer</h1>
+
+<MethodEndpoint method={"delete"} path={"/org/{orgId}/contact/{contactId}/buyer/{buyerId}"}></MethodEndpoint>
+
+
+
+remove contact from buyer by the given organization, buyer id and contact id.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Buyer ID","in":"path","name":"buyerId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Contact ID","in":"path","name":"contactId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+empty string if success
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
