@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/category/suger-api">
-            Docs
+            Suger Docs
           </Link>
         </div>
       </div>
