@@ -1,0 +1,62 @@
+---
+id: create-refund
+title: "create refund."
+description: "create refund on the payment transaction, support partial refunds multiple times."
+sidebar_label: "create refund."
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1vGzcQ/SvEnNqC0LpFexGCILJTFEIOMWznZOhA744kNrskMxzaVRf734vh7kqyPlJAbnWQBHKGb77emxYqjCXZwNY7mEJJaBgV4TK5SnmneI0qmE2DjhWTcdGUYqpVTCF4YhUMsTX14BJVk2q2oUbFtsE4AQ0+IBlxmlcwhZuMcJetQUMwZBpkpAjTx/Ygms+0Ms7+nZ3V/CNosHIcDK9BgzMNwhQ8rebyEuG3ZAkrmDIl1BDLNTYGpi3wJohhZLJuBV2nD3Gu0wbpLMCT3L4V4va4hmcBh3o/7Ezfit6XW5nGJ8cj6LeEtNmhbi//Fcel5gkJum4hxjF4FzHK/S9XV/LzGvv3JvBG9bEpu1QxlSWiJFR6x+hYXEwItS1zo4s/o/i138mv6zT8egrr2lRKwsfICok8vRXlt1Moc8dIztQqIj0j/RdInYaIZSLLm8yDazSE9OC/opslXsP0cSHVZrMSnsC1rWtxXWhokNdeiBV85EwoMYfC06poMze6Ik9w0Q6D3BXHA1a0p4auK2jkaZ9qT9JEtSAUa+YQp0Vhgp3EtEKalLVPFUikYzb3knQ/HUc5HXUvGygWC7X0pEzitadRAGw+bAwrv1TvBuOf5PN+ouasbFRL8k2WrNntXP2BPAv2prboeFaWGGPGnozzv0ZTIe0IMNtHAz12yQT7CTfCKrBu6SVsabQpc6OxMVaqMcjhh74O1u+evZcTdd/fgx6qN9bu5eVlMvoUwyPQ6YPK3Nx9+ai2OhpFmI2KmCtBGH2iEqNW1pV1qoRnfk85o1aBfJVKjlr55RIpaoWOLdcoLY9apWhWovqlp0qtyKcQcwOyMrN1K62QS6lc9tpmNbudgwYZjD7OnydXEryMYmPy0A9FeLVX5J1X+bU76vwvG2joJONfXITaWCdB5j60A18eZY2Ahum4TTJX5GCn/scMkfuzYp2Js9CwFl5OH6Ftn0zEL1R3nRz36pt3no3mqRa9XZo64ndq88PdIM0/qkNFP5niV9zsC/uzqZMYZYI+G7ICe3kIx9v5ZBAjjdxmP4QxuL7eeWNdEsPe5r4AfOztxfBnt/oFwZwcpG7R6VGopFG9qahZ2O/o0brp9jfD7ef7B9BgBtHd6Zq8psc/8vzJCA91sY9BvqVuJ13eif5+ws37rXl/c9Zhq8W9tdRr0XXdP4rArFg=
+sidebar_class_name: "post api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>create refund.</h1>
+
+<MethodEndpoint method={"post"} path={"/org/{orgId}/buyer/{buyerId}/paymentTransaction/{paymentTransactionId}/refund"}></MethodEndpoint>
+
+
+
+create refund on the payment transaction, support partial refunds multiple times.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Buyer ID","in":"path","name":"buyerId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Payment transaction ID","in":"path","name":"paymentTransactionId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Refund amount","in":"query","name":"amount","required":true,"schema":{"type":"number"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+Empty string if succeed
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

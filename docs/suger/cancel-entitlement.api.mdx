@@ -1,0 +1,70 @@
+---
+id: cancel-entitlement
+title: "cancel entitlement"
+description: "Cancel the active subscription in Azure Marketplace"
+sidebar_label: "cancel entitlement"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVV2P0zoQ/SvWPAGymgXBS4TQLR9C1QpYsfC06oPXmSZmE9uM7V1KlP9+Nflos21BYqEPbeqMZ84cnzluocCgyfhonIUc3iirsRaxQqF0NLcoQrreBQhjxfJnIhQfFN1g9LXSCBKcR1IcsCp2Od7ZaGKNDdoIErwi1WBECpBftQdFP1GprPnZZxCrtyDB8LJXsQIJVjUIOTgqVwVIIPyeDGEBeaSEEoKusFGQtxC3ngNDJGNL6Dp5WGcG6ZdlcB/zh+XWHBy8swEDv392dsY/B62egwTtbGRa8haU97XRfefZt8Ah7W9KdJ2E56fSvlaFYKQYokAiR39f5flxlY8uio1Ltvjb7C9O9bCyEcmqWgSkW6R/0UcnIaBOZOK2l91rVIT0xd2gXaZYQX615mOLqmRZzvUBawkNxsqxoL0Lg4Z5C2SOyqzt5dhlM7lk7T3tdJnu5wAYAzc0KD9RzTmyKkYf8ixT3ixCKpEWunapAMYzYb7k1gYxHSE/UkAfICJHiI0joVKsHE1TZfrFRkXhNuLlGPyEP68WYhWFCWJDrukHf3mxEu8xLr15Uxu0cak1htDXXkxDU6EqkPZjs5xXAzmdhfLmHLc8i2DsxjFsPk6l++PERhlmIyTvHcX/Bh6M26e95BVxObwHObI3cXd3d7eY9mRjEujkoaV9/vpW7BwqCGeFEgF7JgiDS6QxSGGsrlNhbCnczI6CFJ5ckXQMUrjNBilIMTvnIEUKqkRBqB0VoiSXfOgPoLe7aGwpBUbNzPW7dl0tL1YggYUx4Hy6OGPwLLZG9dIeSRh0NK8KBz22+yF5oIOP5xXxR8x8rYxlKD3b7aj7K3ZgkJBPRnwfT35onKP61xIqHp/8Ctr2WgX8SnXX8fL3hMRjuZZwq8ioa+aG7wYT+LmAfKPqgL9p9dHn0Zwfi+Mr5GRHkyztlqlXdeJ/IOEGt7srpr83HoLh6Hp5AIT7LHbrTk6jxtQMMTyPPs52H9liN3evi0+XX0CCGm1jP5mcTU4PnP4ktMPJHjDwNxN1cstLdpBz3L7ahQ9vfrlh5yZDNBO17rruf4ye+Fg=
+sidebar_class_name: "post api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>cancel entitlement</h1>
+
+<MethodEndpoint method={"post"} path={"/org/{orgId}/entitlement/{entitlementId}/cancel"}></MethodEndpoint>
+
+
+
+Cancel the active subscription in Azure Marketplace
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Entitlement ID","in":"path","name":"entitlementId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Not found
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

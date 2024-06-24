@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4276],{32046:e=>{e.exports=JSON.parse('{"title":"Suger API","description":"todo","slug":"/category/suger-api","permalink":"/docs/category/suger-api","navigation":{"next":{"title":"Introduction","permalink":"/docs/suger/suger-api"}}}')}}]);

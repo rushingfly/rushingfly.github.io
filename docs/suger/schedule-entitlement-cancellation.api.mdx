@@ -1,0 +1,66 @@
+---
+id: schedule-entitlement-cancellation
+title: "schedule entitlement cancellation"
+description: "Schedule the cancellation of the given Entitlement"
+sidebar_label: "schedule entitlement cancellation"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu4zYQ/RVintqCsd2ieREWizoXFEZaJIiz6EPWKBhqLHFXIrkkFccr6N+LoSRblp3FNm0eAouc+5w5nBpS9NIpG5TRkMBS5phWBbKQI5NCSywKQXfMrONZpp5Rs2sdVCiwRB2Ag7HootAiHZgYyFwODAEHK5woMaDzkDzWowhuXSa0+to6XVwBB0XHVoQcOGhRIiRgXLZIgYPDL5VymEISXIUcvMyxFJDUELaWBH1wSmfQNHzsZxDeq25wL/Mv3a1aYfThwqRbkpBGBypXUoOwtlAyZjj95CmaemDKOqpnUOijWizdlQhIX4cpPIx7lIqAfaMGsU/YIjDlWR8+2+SooxCFTTdLi1KtlSQ/E+DjdDhIh9HF6UD+au0pfxiO78FEF2QA05PGtfmu7Ehswv4UL+x8NmMyF05IAhHZLMXLH6izkENyPpud8NEe1CCK4nYdYYe6KiF5hGud3q4f0JXAYVGWmCrKkcOwJrAam+TwckYWzp6FI7QQlGGI834MHrYW/x76eFVo6PxVocOoCGeHVRsqxvYS9vvYzdMnlAEaOjpUux+AdYzzhg68Ndq3kPxlNjvu1u0N8O/H+HhcKKBfT5m9ECnrBomhc8b9Vy/np7wsdECnRcE8umd0/4enhoNHWTkVthFtFygcugfzGfW8Ipg+xuYFkfkWhHtCXXEoMeSGyNQaHyJjkgpMjcumdSS/ZjoY8Gl9wFTNtJ+8EfG26bWsW7mCLE7zEKxPplNh1cRXGbqJLEyVAkXXZ0AILNvmH+Vx1LEowAJJsLVxTFQhN65ndBUPSxGIp951wj/R3/ueptbOlJGd5ncL9juGuVWXhUId5lKi99H3pCfsHEWKbk/Z86G3PdkIq25wG2eBujeA+/WLKG2BY67dz/kh9e3PW9baf3ee9qPeUIhr05O/kBFIWApFlfeVtcaF39qaK7NPYUknbNneA+861fdps9lMep1pZwSO5vny/sMV273LnhnNBPMYq+7Qm8pJ9JwpLYsqVTpjZvDses6sM2klg+fMrNfoPB++J56zyosMmUNpXMoyZyrrY7Pjsx6UzjjDICPbk9Yuq/ndAjgQCNs4f57MKHiCeSniUHVF2L0dA78HzwGMUh68sG/bYrr+BXwJU1sIpSmwWPu6m79H2juAQ9KvH3hgIBmvCyencMUhp6FOHqGun4THD65oGjr+UqEjslhxeBZOiSeqG+1HytPvFJK1KDx+I+8f7jvi/pEdr1En8+vHQxPtP4uioi/g8Bm3uzUr7k5vieFoxXpDCIc1bVYN70eeStPKXLbOz+iBHNg4omxKpNUgJrHhm7JDFr67XT4Ah6dulStNSjpObOitFBtI4CN8hLgJx/khoXheQyF0VomM5Fu7REGiY849OVFYvP9BmZ2sypjc2mToP6V2UuUdkegNbt/vxNubVxV2hNpKU49WTdP8AwniOqQ=
+sidebar_class_name: "post api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>schedule entitlement cancellation</h1>
+
+<MethodEndpoint method={"post"} path={"/org/{orgId}/entitlement/{entitlementId}/scheduleCancellation"}></MethodEndpoint>
+
+
+
+Schedule the cancellation of the given Entitlement
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Entitlement ID","in":"path","name":"entitlementId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details mime"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-mime"}><h3 className={"openapi-markdown__details-summary-header-body"}>Body</h3><strong className={"openapi-schema__required"}>required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}><div style={{"marginTop":"1rem","marginBottom":"1rem"}}>
+
+RequestBody
+
+</div></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"cancelDate"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"The cancellation date of the entitlement. It is required when the type is SpecificDate.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"creationDate"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"When this cancellation schedule is created.","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"note"} required={false} schemaName={"string"} qualifierMessage={"**Possible values:** `<= 500 characters`"} schema={{"description":"The cancellation note. Max 500 characters.","maxLength":500,"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"type"} required={false} schemaName={"string"} qualifierMessage={"**Possible values:** [`EndOfTerm`, `Immediate`, `SpecificDate`]"} schema={{"enum":["EndOfTerm","Immediate","SpecificDate"],"type":"string","x-enum-varnames":["CancellationScheduleType_EndOfTerm","CancellationScheduleType_Immediate","CancellationScheduleType_SpecificDate"]}}></SchemaItem></ul></details></TabItem></MimeTabs><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      

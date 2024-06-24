@@ -1,0 +1,70 @@
+---
+id: get-offer-reseller-eula
+title: "get offer reseller EULA"
+description: "Get the Reseller EULA file of the given offer ID."
+sidebar_label: "get offer reseller EULA"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVd9v2zYQ/lcO97QNhJWt64tQFHObIDDaoUXcYA+BH1jpLHGVSJY8JfUE/e/DUZLtxm6BpfND7PB+f7zvY48lxSIYz8ZZzPGaGLgmuKFITUMBrm7fLmFrGgK3TZbK3JMFt91SgNXlAhU6T0FL/KocM7wT45zhqms0KvQ66JaYQsT8rn9U9V2otDX/pCSwukSFRo695hoVWt0S5uhCtSpRYaDPnQlUYs6hI4WxqKnVmPfIOy+OkYOxFQ6DOqkzdf2NAmL9jyU24hy9s5Gi2H+7uJCvr8su/1rD+hlEU1kq4fbmLTwYruHZBbTGdkwR6Is3YQdsWkKFhbNMliWR9r4xRQIm+ztKtv473QyDwt/PdfBKlyBDUWSgEFz48SrPT6v8SVy7Eqxj0E3jHqj80TLPzw2zskzB6ub/mGRQGKnoguFd2stXpAOFD+4T2WXHNeZ3G7lj1pXs7bhAuFHYplExx4o4bbf4YuZClfVpUYcsrVPWT1s1ZOFrQkQK9zMbutBIdFYz+5hnmfZmEbuKwqJoXFeitDC3uZZpxmU7afbk2pMDsHjA1gXQHdcuzEwz6bDVLNx+MTn/Ip+XC1gxmAjb4NpE++X7FVwTL7153RiyvCwKijHVXsx0qkmXFA6EWh5XQzXDr715QzvhJxq7ddK23KAu0g1Sq42gETvvXeA/RhyMO6RdywmsRzuqCb0Zu4eHh8Uck01JcFCPkHl9c3sJe+GK4CxoiJSQCBRdFwqKCowtmq40tgJ3JFFRgQ+u7AqOalTCqIAsG26oJSunXdQVQaDChRKq4Dof0wUkCWRjKwXEhSCXovZTLd+vUKEsxtjnr4sLad67yK1O2zyBUKVeRc7CsVTjo0H7AzmepO3TlTF94cw32ljpJgHeT0t/J8KMCvNZn1N4OjjS06PV3yisXWSJ7PuPOtJtaIZBjj93FISGG4X3Ohj9UYCRx8JE+V1ivtVNpO+M+NPNpNw/w+mbcnaWeSftTnDXTSf/ocJPtNu/OekheVIPh/fmKcUn/IbNoGZuCRyjVQjo+SjuRPqGY526vvqACvUkEwcmSjI1/5DsZ3t6zOSxBfkr2JwNeSGK8YZ2L/fuo+WbAXv1GL0Foc0wDP8CyR/xQA==
+sidebar_class_name: "get api-method"
+info_path: docs/suger/suger-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>get offer reseller EULA</h1>
+
+<MethodEndpoint method={"get"} path={"/org/{orgId}/offer/{offerId}/resellerEula"}></MethodEndpoint>
+
+
+
+Get the Reseller EULA file of the given offer ID.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"description":"Organization ID","in":"path","name":"orgId","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"description":"Offer ID","in":"path","name":"offerId","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+AWS S3 signed URL with 30 minutes expiry time
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Bad request error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"405"} value={"405"}><div>
+
+Method not allowed
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal error
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+string
+
+</div></ul></details></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
