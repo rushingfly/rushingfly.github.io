@@ -1,0 +1,15 @@
+// place your custom styles here
+
+// hide original copyright text.
+.vp-copyright {
+  display: none;
+}
+
+.vp-blog-hero-title {
+  color: #2c3e50;
+}
+
+:root {
+  // 标题字体指向文本字体
+  --font-family-heading: --font-family;
+}
