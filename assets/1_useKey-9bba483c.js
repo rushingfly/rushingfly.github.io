@@ -1,0 +1,1 @@
+const s="/assets/images/2020-09-17-issue-when-use-index-as-key/1_list.png",e="/assets/images/2020-09-17-issue-when-use-index-as-key/1_useIndex.gif",i="/assets/images/2020-09-17-issue-when-use-index-as-key/1_change-process.png",a="/assets/images/2020-09-17-issue-when-use-index-as-key/1_useKey.gif";export{s as _,e as a,i as b,a as c};
