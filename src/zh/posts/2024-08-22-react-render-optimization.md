@@ -37,7 +37,7 @@ function ExpensiveComponent({ a, b }) {
 在上面的代码中，useMemo确保了只有在a或b发生变化时，才会重新计算expensiveValue，从而避免每次渲染时重复进行不必要的计算。
 
 ### useCallback
-```useCallback```和```useMemo```类似，也是一个React Hook，区别之处是它用于缓存回调函数，以避免在组件重渲染时创建新的函数实例。
+```useCallback```和```useMemo```类似，也是一个通过缓存的方式节省计算资源的React Hook，区别之处是它缓存的是回调函数，以避免在组件重渲染时创建新的函数实例。
 ``` jsx
 const memoizedCallback = useCallback(() => {
   // 这里的代码不会因为每次组建渲染而重新执行
@@ -65,7 +65,7 @@ class MyComponent extends React.Component {
 }
 ```
 ### PureComponent
-```PureComponent```是Component的一个子类，提供了浅层比较的```shouldComponentUpdate```实现。
+```PureComponent```是Component的一个子类，提供了浅层比较的```shouldComponentUpdate```实现：组件的```props```或```state```发生变化时才会重新渲染组件。
 ``` jsx
 class MyComponent extends React.PureComponent {
   // 组件内容
